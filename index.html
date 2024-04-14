@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diluião de medicamentos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section id="img">
+            <img src="/img/undraw_medical_care_movn (1).svg" alt="" srcset="">
+
+        </section>
+        <section class="calcForm">
+           <form id="form">
+               <h1 id="title">Cálculo de Diluição de Medicamento </h1>
+
+                 <div class="input-box">
+                    <label for="">Nome do Medicamento:</label>
+                    <input type="text" class="input-field"  id="nomeMedicamento">
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label for="doseDisponivel">Dose Disponível:</label>
+                <input type="number" class="input-field"  name="doseDisponivel" id="doseDisponivel" placeholder="mg,ml..." required>
+            </div>
+
+            <div class="input-box">
+                <label for="volDiluente">Volume do Diluente:</label>
+                <input type="number" class="input-field"  name="volDiluente" id="volDiluente" placeholder="em ml" required> 
+            </div>
+            
+            <div class="input-box">
+                <label for="dosePrescrita">Dose Prescrita:</label>
+                <input type="number" class="input-field"  name="dosePrescrita" id="dosePrescrita" placeholder="mg, ml..." required>
+            </div>
+
+                <div id="calcular">
+                    <button id="botaoCalcular"  onclick="calcular(event)"> Enviar </button>
+                </div>            
+
+            <div id="resultado" class="hidden">
+                <span id="resultadoCalculo"></span>
+            </div>
+            
+           </form>
+        </section>
+    </main>
+    <script src="main.js"></script>
+    
+</body>
+</html>
